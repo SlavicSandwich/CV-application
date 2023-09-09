@@ -1,4 +1,4 @@
-import InputGroup from "../../InputGroud";
+import InputGroup from "../../InputGroup";
 
 export default function PersonalDetails({
   onChange,
