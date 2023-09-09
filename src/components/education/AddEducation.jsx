@@ -1,4 +1,3 @@
-import InputGroup from "../../InputGroud";
 import CreateForm from "../../CreateForm";
 
 export default function AddEducation({
