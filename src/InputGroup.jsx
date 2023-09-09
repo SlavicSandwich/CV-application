@@ -10,7 +10,7 @@ export default function InputGroup({
   "data-key": dataKey,
 }) {
   return (
-    <div className="input-groud">
+    <div className="input-group">
       <label htmlFor="id">
         <span className="label-text">{labelText}</span>
         {optional && <span className="optional-text">Optional</span>}
