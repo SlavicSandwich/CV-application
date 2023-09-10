@@ -17,7 +17,7 @@ export default function AddExperience({
         isOpen={isOpen}
         setOpen={setOpen}
         sectionName="Experience"
-        iconName=""
+        iconClass="fa-solid fa-briefcase"
       />
 
       <div className={`section-content ${isOpen ? "open" : ""}`}>
@@ -33,7 +33,7 @@ export default function AddExperience({
           // arrayName="jobs"
         />
       </div>
-      <CreateForm createForm={createForm} buttonText={Job} />
+      <CreateForm createForm={createForm} buttonText="Job" />
     </div>
   );
 }
