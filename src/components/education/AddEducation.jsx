@@ -17,7 +17,7 @@ export default function AddEducation({
         isOpen={isOpen}
         setOpen={setOpen}
         sectionName="Education"
-        iconName=""
+        iconName="fa-solid fa-graduation-cap"
       />
       <div className={`section-content ${isOpen ? "open" : ""}`}>
         <DisplayForms
