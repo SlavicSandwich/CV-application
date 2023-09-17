@@ -1,4 +1,6 @@
 import CreateForm from "../CreateForm";
+import ExpandSection from "../ExpandSection";
+import EducationForm from "./EducationForm";
 
 export default function AddEducation({
   educations,
@@ -22,14 +24,14 @@ export default function AddEducation({
       <div className={`section-content ${isOpen ? "open" : ""}`}>
         <DisplayForms
           forms={educations}
-          // FormComponent={EducationForm}
+          FormComponent={EducationForm}
           onChange={onChange}
           onCancel={onCancel}
           onHide={onHide}
           onRemove={onRemove}
           toggleCollapsed={toggleCollapsed}
-          // titleKey="schoolName"
-          // arrayName="educations"
+          titleKey="schoolName"
+          arrayName="educations"
         />
       </div>
       <CreateForm createForm={createForm} buttonText="Education" />
