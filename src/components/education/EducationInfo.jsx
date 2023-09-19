@@ -1,4 +1,4 @@
-export default function EducationInf({ info }) {
+export default function EducationInfo({ info }) {
   return (
     <div className="education-info">
       <div className="education-info-group">
