@@ -1,3 +1,7 @@
+import PersonalInfoSection from "./personal/PersonalInfoSection";
+import ExperienceInfoSection from "./experience/ExperienceInfoSection";
+import EducationInfoSection from "./education/EducationInfoSection";
+
 export default function ResumeSide({ personalInfo, sections, layout }) {
   return (
     <div className="resume-container">
