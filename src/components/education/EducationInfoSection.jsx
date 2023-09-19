@@ -1,6 +1,6 @@
 import EducationInfo from "./EducationInfo";
 
-export default function EducationInfosection({ eductaions }) {
+export default function EducationInfoSection({ eductaions }) {
   return (
     <div className="eductaion-section resume-section">
       <DisplaySection
