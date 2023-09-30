@@ -1,4 +1,4 @@
-export default function DisplaySection({ title, array, infoComponent }) {
+export default function DisplaySection({ title, array, InfoComponent }) {
   return (
     <>
       {!array.every((obj) => obj.isHidden) && (
@@ -6,7 +6,7 @@ export default function DisplaySection({ title, array, infoComponent }) {
       )}
 
       {array.map(
-        (info) => !info.isHidden && <infoComponent info={info} key={info.id} />
+        (info) => !info.isHidden && <InfoComponent info={info} key={info.id} />
       )}
     </>
   );
