@@ -1,5 +1,7 @@
 import CreateForm from "../CreateForm";
-
+import ExpandSection from "../ExpandSection";
+import DisplayForms from "../DisplayForms";
+import ExperienceForm from "./ExperienceForm";
 export default function AddExperience({
   jobs,
   isOpen,
@@ -17,23 +19,23 @@ export default function AddExperience({
         isOpen={isOpen}
         setOpen={setOpen}
         sectionName="Experience"
-        iconClass="fa-solid fa-briefcase"
+        iconClass="Experience"
       />
 
       <div className={`section-content ${isOpen ? "open" : ""}`}>
         <DisplayForms
           forms={jobs}
-          // FormComponent={JobForm}
+          FormComponent={ExperienceForm}
           onChange={onChange}
           onCancel={onCancel}
           onHide={onHide}
           onRemove={onRemove}
           toggleCollapsed={toggleCollapsed}
-          // titleKey="jobName"
-          // arrayName="jobs"
+          titleKey="companyName"
+          arrayName="jobs"
         />
       </div>
-      <CreateForm createForm={createForm} buttonText="Job" />
+      <CreateForm onClick={createForm} buttonText="Job" />
     </div>
   );
 }

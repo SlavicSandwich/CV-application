@@ -1,7 +1,7 @@
 import CreateForm from "../CreateForm";
 import ExpandSection from "../ExpandSection";
 import EducationForm from "./EducationForm";
-
+import DisplayForms from "../DisplayForms";
 export default function AddEducation({
   educations,
   isOpen,
@@ -19,7 +19,7 @@ export default function AddEducation({
         isOpen={isOpen}
         setOpen={setOpen}
         sectionName="Education"
-        iconName="fa-solid fa-graduation-cap"
+        iconName="education"
       />
       <div className={`section-content ${isOpen ? "open" : ""}`}>
         <DisplayForms
@@ -34,7 +34,7 @@ export default function AddEducation({
           arrayName="educations"
         />
       </div>
-      <CreateForm createForm={createForm} buttonText="Education" />
+      <CreateForm onClick={createForm} buttonText="Education" />
     </div>
   );
 }
