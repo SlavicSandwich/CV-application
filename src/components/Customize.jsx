@@ -3,17 +3,22 @@ import LayoutEdit from "./customization/LayoutEdit";
 import AccentColorEdit from "./customization/AccentColorEdit";
 
 export default function Customize({ isShown, onColChange }) {
-  <div className="customize" style={{ display: isShown ? undefined : "none" }}>
-    <div>
-      <LayoutEdit onColChange={onColChange} />
-    </div>
+  return (
+    <div
+      className="customize"
+      style={{ display: isShown ? undefined : "none" }}
+    >
+      <div>
+        <LayoutEdit onColChange={onColChange} />
+      </div>
 
-    <div>
-      <AccentColorEdit />
-    </div>
+      <div>
+        <AccentColorEdit />
+      </div>
 
-    <div>
-      <FontEdit />
+      <div>
+        <FontEdit />
+      </div>
     </div>
-  </div>;
+  );
 }
