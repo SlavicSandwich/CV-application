@@ -13,8 +13,8 @@ export default function ResumeSide({ personalInfo, sections, layout }) {
           adress={personalInfo.adress}
         />
         <div>
-          <EducationInfoSection educations={sections.educations} />
-          <ExperienceInfoSection educations={sections.jobs} />
+          <EducationInfoSection eductaions={sections.educations} />
+          <ExperienceInfoSection jobs={sections.jobs} />
         </div>
       </div>
     </div>
