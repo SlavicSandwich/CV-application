@@ -13,7 +13,7 @@ export default function PersonalDetails({
       <InputGroup
         type="text"
         id="full-name"
-        text="Full name"
+        labelText="Full name"
         placeholder="First and Second name"
         value={fullName}
         onChange={onChange}
@@ -23,7 +23,7 @@ export default function PersonalDetails({
       <InputGroup
         type="email"
         id="email"
-        text="Email"
+        labelText="Email"
         placeholder="Enter Email"
         value={email}
         onChange={onChange}
@@ -33,7 +33,7 @@ export default function PersonalDetails({
       <InputGroup
         type="tel"
         id="phone-number"
-        text="Phone number"
+        labelText="Phone number"
         placeholder="Enter phone number"
         value={phoneNumber}
         onChange={onChange}
@@ -43,7 +43,7 @@ export default function PersonalDetails({
       <InputGroup
         type="text"
         id="adress"
-        text="Adress"
+        labelText="Adress"
         placeholder="Enter Adress"
         value={adress}
         onChange={onChange}
