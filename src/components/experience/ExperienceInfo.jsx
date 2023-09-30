@@ -5,7 +5,7 @@ export default function ExperienceInfo({ info }) {
         <p className="dates">
           {info.startDate}
           {info.startDate && info.endDate && <span> - </span>}
-          {endDate}
+          {info.endDate}
         </p>
         <p>{info.location}</p>
       </div>
