@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 export default function ExpandSection({
   isOpen,
@@ -13,7 +15,9 @@ export default function ExpandSection({
       onClick={() => setOpen(isOpen ? "" : sectionName)}
     >
       <h2 className="expand-section-header">
-        <FontAwesomeIcon icon={iconName} />
+        <FontAwesomeIcon
+          icon={iconName === "Experience" ? faBriefcase : faGraduationCap}
+        />
         {sectionName}
       </h2>
       <FontAwesomeIcon icon={faAngleDown} className={isOpen ? "open" : ""} />
