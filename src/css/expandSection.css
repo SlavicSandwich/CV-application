@@ -1,0 +1,29 @@
+.expand-section {
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.expand-section > h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.expand-section:active {
+  scale: none;
+}
+
+.expand-section > svg {
+  transition: transform 0.2s ease-in-out;
+}
+
+.expand-section > svg.open {
+  transform: rotate(180deg);
+}
