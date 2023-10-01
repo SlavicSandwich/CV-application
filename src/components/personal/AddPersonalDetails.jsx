@@ -1,4 +1,5 @@
 import InputGroup from "../InputGroup";
+import "../../css/personalDetails.css";
 
 export default function PersonalDetails({
   onChange,
