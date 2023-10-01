@@ -1,6 +1,7 @@
 import FontEdit from "./customization/FontEdit";
 import LayoutEdit from "./customization/LayoutEdit";
 import AccentColorEdit from "./customization/AccentColorEdit";
+import "../css/customize.css";
 
 export default function Customize({ isShown, onColChange }) {
   return (
