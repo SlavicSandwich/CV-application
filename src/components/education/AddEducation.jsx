@@ -2,6 +2,8 @@ import CreateForm from "../CreateForm";
 import ExpandSection from "../ExpandSection";
 import EducationForm from "./EducationForm";
 import DisplayForms from "../DisplayForms";
+import "../../css/section.css";
+
 export default function AddEducation({
   educations,
   isOpen,
@@ -33,8 +35,8 @@ export default function AddEducation({
           titleKey="schoolName"
           arrayName="educations"
         />
+        <CreateForm onClick={createForm} buttonText="Education" />
       </div>
-      <CreateForm onClick={createForm} buttonText="Education" />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import CreateForm from "../CreateForm";
 import ExpandSection from "../ExpandSection";
 import DisplayForms from "../DisplayForms";
 import ExperienceForm from "./ExperienceForm";
+import "../../css/section.css";
 export default function AddExperience({
   jobs,
   isOpen,
@@ -19,7 +20,7 @@ export default function AddExperience({
         isOpen={isOpen}
         setOpen={setOpen}
         sectionName="Experience"
-        iconClass="Experience"
+        iconName="Experience"
       />
 
       <div className={`section-content ${isOpen ? "open" : ""}`}>
@@ -34,8 +35,8 @@ export default function AddExperience({
           titleKey="companyName"
           arrayName="jobs"
         />
+        <CreateForm onClick={createForm} buttonText="Job" />
       </div>
-      <CreateForm onClick={createForm} buttonText="Job" />
     </div>
   );
 }
