@@ -31,7 +31,7 @@ button:active {
 
 .clear-resume {
   background-color: white;
-  color: red;
+  color: rgb(180, 0, 0);
   display: flex;
   gap: 5px;
   justify-content: center;
