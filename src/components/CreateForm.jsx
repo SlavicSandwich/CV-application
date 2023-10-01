@@ -1,5 +1,6 @@
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../css/createForm.css";
 
 export default function CreateForm({ onClick, buttonText }) {
   return (
