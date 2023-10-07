@@ -1,0 +1,17 @@
+.customize {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.customize > div {
+  padding: 18px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.customize button {
+  background-color: initial;
+  border: none;
+  padding: 8px;
+}
