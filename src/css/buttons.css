@@ -1,0 +1,36 @@
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.btn-group button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  font: "NotoSans-Bold";
+}
+
+.btn-group button:active {
+  scale: none;
+}
+
+.btn-group > .delete-btn,
+.btn-container > .cancel-btn {
+  background-color: initial;
+  outline: 1px solid gray;
+  color: gray;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-container > .save-btn {
+  background-color: #187ff5;
+  color: white;
+}
