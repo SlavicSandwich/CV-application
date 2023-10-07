@@ -2,9 +2,9 @@ import InputGroup from "../InputGroup";
 import Buttons from "../Buttons";
 
 export default function EducationForm(props) {
-  const { school, degree, startDate, endDate, location, id } = props.form;
+  const { schoolName, degree, startDate, endDate, location, id } = props.form;
 
-  const { onChange, onCancel, onSave, onDelete } = props;
+  const { onChange, onCancel, onSave, onRemove } = props;
 
   return (
     <form
@@ -19,7 +19,7 @@ export default function EducationForm(props) {
         type="text"
         labelText="School"
         onChange={onChange}
-        value={school}
+        value={schoolName}
         // optional
         data-key="School"
       />
@@ -65,7 +65,7 @@ export default function EducationForm(props) {
         optional
         data-key="location"
       />
-      <Buttons onSave={onSave} onCancel={onCancel} onDelete={onDelete} />
+      <Buttons onSave={onSave} onCancel={onCancel} onDelete={onRemove} />
     </form>
   );
 }

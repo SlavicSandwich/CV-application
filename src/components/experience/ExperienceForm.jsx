@@ -4,7 +4,7 @@ import Buttons from "../Buttons";
 export default function ExperienceForm(props) {
   const {
     companyName,
-    positionTitle,
+    position,
     location,
     startDate,
     endDate,
@@ -12,7 +12,7 @@ export default function ExperienceForm(props) {
     id,
   } = props.form;
 
-  const { onChange, onCancel, onSave, onDelete } = props;
+  const { onChange, onCancel, onSave, onRemove } = props;
 
   return (
     <form
@@ -38,7 +38,7 @@ export default function ExperienceForm(props) {
         type="text"
         labelText="Position Title"
         onChange={onChange}
-        value={positionTitle}
+        value={position}
         // optional
         data-key="positionTitle"
       />
@@ -84,7 +84,7 @@ export default function ExperienceForm(props) {
         optional
         data-key="description"
       />
-      <Buttons onSave={onSave} onCancel={onCancel} onDelete={onDelete} />
+      <Buttons onSave={onSave} onCancel={onCancel} onDelete={onRemove} />
     </form>
   );
 }
