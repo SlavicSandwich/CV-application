@@ -1,3 +1,4 @@
+import "../../css/educationInfo.css";
 export default function EducationInfo({ info }) {
   return (
     <div className="education-info">

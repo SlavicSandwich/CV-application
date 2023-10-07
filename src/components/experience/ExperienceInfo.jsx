@@ -1,3 +1,5 @@
+import "../../css/experienceInfo.css";
+
 export default function ExperienceInfo({ info }) {
   return (
     <div className="experience-info">
