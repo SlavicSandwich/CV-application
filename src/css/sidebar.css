@@ -29,3 +29,9 @@
 .sidebar-button:active {
   scale: 0.95;
 }
+
+@media only screen and (max-width: 1020px) {
+  .sidebar {
+    width: 100%;
+  }
+}
