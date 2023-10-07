@@ -1,17 +1,19 @@
-export default function LayoutEdit({ onLayoutChange }) {
+import "../../css/customize/layoutEdit.css";
+
+export default function LayoutEdit({ onColChange }) {
   return (
     <>
       <h2>Layout</h2>
       <div className="layout-buttons">
-        <button onClick={() => onLayoutChange("top")}>
+        <button onClick={() => onColChange("top")}>
           <div className="top-visual visual" />
           Top
         </button>
-        <button onClick={() => onLayoutChange("left")}>
-          <div className="right-visual visual" />
-          Right
+        <button onClick={() => onColChange("left")}>
+          <div className="left-visual visual" />
+          Left
         </button>
-        <button onClick={() => onLayoutChange("right")}>
+        <button onClick={() => onColChange("right")}>
           <div className="right-visual visual" />
           Right
         </button>
