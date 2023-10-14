@@ -10,7 +10,7 @@ export default function EducationForm(props) {
     <form
       onSubmit={(e) => e.preventDefault()}
       id={id}
-      data-array-name="education"
+      data-array-name="educations"
       className="section-form education-form"
     >
       <InputGroup
@@ -21,7 +21,7 @@ export default function EducationForm(props) {
         onChange={onChange}
         value={schoolName}
         // optional
-        data-key="School"
+        data-key="schoolName"
       />
       <InputGroup
         id="degree"
@@ -37,7 +37,7 @@ export default function EducationForm(props) {
         <InputGroup
           id="start-date"
           placeholder="Enter Start Date"
-          type="date"
+          type="text"
           labelText="Start Date"
           onChange={onChange}
           value={startDate}
@@ -47,7 +47,7 @@ export default function EducationForm(props) {
         <InputGroup
           id="end-date"
           placeholder="Enter End Date"
-          type="date"
+          type="text"
           labelText="End Date"
           onChange={onChange}
           value={endDate}

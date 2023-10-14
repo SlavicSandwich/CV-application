@@ -39,7 +39,7 @@ export default function PersonalDetails({
         value={phoneNumber}
         onChange={onChange}
         recommended
-        data-key="telephone"
+        data-key="phoneNumber"
       />
       <InputGroup
         type="text"

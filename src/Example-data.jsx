@@ -35,7 +35,7 @@ const exampleData = {
     jobs: [
       {
         companyName: "Yandex",
-        position: "javascript-intern",
+        positionTitle: "javascript-intern",
         startDate: "2027",
         endDate: "2030",
         location: "Moscow, RU",

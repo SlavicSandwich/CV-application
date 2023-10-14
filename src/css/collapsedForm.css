@@ -1,11 +1,13 @@
 .collapsed-form {
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px;
-  background-color: white;
+  align-items: center;
   border: none;
   border-top: 5px solid var(--main-bg-color);
-  transform: none;
+  padding: 12px 14px 12px 24px;
+  background-color: white;
+  /* transform: none; */
+  width: 100%;
 }
 
 .collapsed-form:last-of-type {
@@ -17,7 +19,7 @@
 }
 
 .collapsed-form > .collapsed-form-title {
-  font-size: 16px;
+  font-size: 17px;
   font-family: "NotoSans-SemiBold";
 }
 
@@ -25,8 +27,8 @@
   color: rgb(77, 77, 77);
   transition: 0.2s;
   font-size: 18px;
-  /* width: 43px; */
-  /* padding: 10px; */
+  width: 43px;
+  padding: 10px;
 }
 
 .collapsed-form > svg:hover {

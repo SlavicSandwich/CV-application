@@ -4,7 +4,7 @@ import Buttons from "../Buttons";
 export default function ExperienceForm(props) {
   const {
     companyName,
-    position,
+    positionTitle,
     location,
     startDate,
     endDate,
@@ -18,7 +18,7 @@ export default function ExperienceForm(props) {
     <form
       onSubmit={(e) => e.preventDefault()}
       id={id}
-      data-array-name="experience"
+      data-array-name="jobs"
       className="section-form experience-form"
     >
       <InputGroup
@@ -38,7 +38,7 @@ export default function ExperienceForm(props) {
         type="text"
         labelText="Position Title"
         onChange={onChange}
-        value={position}
+        value={positionTitle}
         // optional
         data-key="positionTitle"
       />
@@ -46,7 +46,7 @@ export default function ExperienceForm(props) {
         <InputGroup
           id="start-date"
           placeholder="Enter Start Date"
-          type="date"
+          type="text"
           labelText="Start Date"
           onChange={onChange}
           value={startDate}
@@ -56,7 +56,7 @@ export default function ExperienceForm(props) {
         <InputGroup
           id="end-date"
           placeholder="Enter End Date"
-          type="date"
+          type="text"
           labelText="End Date"
           onChange={onChange}
           value={endDate}

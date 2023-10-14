@@ -59,18 +59,17 @@ function App() {
     });
 
   const createExperienceForm = () => {
-    "jobs",
-      {
-        companyName: "",
-        positionTitle: "",
-        location: "",
-        description: "",
-        startDate: "",
-        endDate: "",
-        isCollapsed: false,
-        isHidden: false,
-        id: uniqid(),
-      };
+    createForm("jobs", {
+      companyName: "",
+      positionTitle: "",
+      location: "",
+      description: "",
+      startDate: "",
+      endDate: "",
+      isCollapsed: false,
+      isHidden: false,
+      id: uniqid(),
+    });
   };
 
   const setOpen = (sectionName) => setSectionOpen(sectionName);
@@ -156,7 +155,7 @@ function App() {
                 onChange={handlePersonalInfoChange}
                 fullName={personalInfo.fullName}
                 email={personalInfo.email}
-                phoneNumber={personalInfo.email}
+                phoneNumber={personalInfo.phoneNumber}
                 adress={personalInfo.adress}
               />
 
